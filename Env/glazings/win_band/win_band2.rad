@@ -1,0 +1,16 @@
+# Proxies for VMX (band 2 only)
+
+void glow windowglow_b2
+0
+0
+4 1 1 1 0
+
+# Band 2: Z 1.40 → 1.90
+windowglow_b2 polygon win_band_2_proxy
+0
+0
+12
+0 0.150 1.40
+0 8.350 1.40
+0 8.350 1.90
+0 0.150 1.90

@@ -1,0 +1,19 @@
+# Two rows of 5 desks, ~1.0 m clear gaps
+# Desk model: desk_1600x800.rad (1.6 x 0.8 x 0.73 m top)
+
+# Parameters (for your reference)
+# startX=1.0  startY=1.2  pitchX=2.6  pitchY=1.8
+
+# Row 1 (y = 1.2)
+!xform -t 1.0  1.2 0 desk_1600x800.rad
+!xform -t 3.6  1.2 0 desk_1600x800.rad
+!xform -t 6.2  1.2 0 desk_1600x800.rad
+!xform -t 8.8  1.2 0 desk_1600x800.rad
+!xform -t 11.4 1.2 0 desk_1600x800.rad
+
+# Row 2 (y = 1.2 + 1.8 = 3.0)
+!xform -t 1.0  3.0 0 desk_1600x800.rad
+!xform -t 3.6  3.0 0 desk_1600x800.rad
+!xform -t 6.2  3.0 0 desk_1600x800.rad
+!xform -t 8.8  3.0 0 desk_1600x800.rad
+!xform -t 11.4 3.0 0 desk_1600x800.rad

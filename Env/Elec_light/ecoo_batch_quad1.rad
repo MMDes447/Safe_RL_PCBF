@@ -1,0 +1,14 @@
+# ecoo_batch_quad.rad — one quadrant batch (8 ECOOS)
+# ecoo.rad is long in Y; we run rows east–west => rotate each fixture -90° about Z.
+
+# Row A (Y = 1.0)
+!xform -rz -90 -t 0.8  1.0 5.2 ecoo1.rad
+!xform -rz -90 -t 2.6  1.0 5.2 ecoo1.rad
+!xform -rz -90 -t 4.9  1.0 5.2 ecoo1.rad
+!xform -rz -90 -t 6.7  1.0 5.2 ecoo1.rad
+
+# Row B (Y = 3.0)
+!xform -rz -90 -t 0.8  3.0 5.2 ecoo1.rad
+!xform -rz -90 -t 2.6  3.0 5.2 ecoo1.rad
+!xform -rz -90 -t 4.9  3.0 5.2 ecoo1.rad
+!xform -rz -90 -t 6.7  3.0 5.2 ecoo1.rad

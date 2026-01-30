@@ -1,0 +1,23 @@
+# top
+desk_mat polygon desk_top
+0
+0
+12
+0 0 0.73   1.6 0 0.73   1.6 0.8 0.73   0 0.8 0.73
+desk_mat polygon desk_top_thick
+0
+0
+12
+0 0 0.70   1.6 0 0.70   1.6 0.8 0.70   0 0.8 0.70
+desk_mat polygon desk_top_sides
+0
+0
+24
+0 0 0.70  1.6 0 0.70  1.6 0 0.73  0 0 0.73
+0 0.8 0.70 1.6 0.8 0.70 1.6 0.8 0.73 0 0.8 0.73
+
+# legs as simple boxes (40×40 mm)
+!genbox alu_mat leg_FL 0.04 0.04 0.70 | xform -t 0.06 0.06 0
+!genbox alu_mat leg_FR 0.04 0.04 0.70 | xform -t 1.54 0.06 0
+!genbox alu_mat leg_RL 0.04 0.04 0.70 | xform -t 0.06 0.70 0
+!genbox alu_mat leg_RR 0.04 0.04 0.70 | xform -t 1.54 0.70 0

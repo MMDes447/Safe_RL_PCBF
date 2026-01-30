@@ -1,0 +1,57 @@
+# ---------- BASIC OFFICE MATERIALS ----------
+
+# Ceiling / walls / floor (typical reflectances)
+void plastic ceil_mat
+0
+0
+5 0.85 0.85 0.85 0 0
+
+void plastic wall_mat
+0
+0
+5 0.70 0.70 0.70 0 0
+
+void plastic floor_mat
+0
+0
+5 0.25 0.25 0.25 0 0
+
+# Furniture & small metals
+void plastic desk_mat
+0
+0
+5 0.55 0.55 0.55 0 0.02
+
+void plastic part_mat
+0
+0
+5 0.55 0.55 0.55 0 0.02
+
+void plastic column_mat
+0
+0
+5 0.45 0.45 0.45 0 0.02
+
+void metal alu_mat
+0
+0
+5 0.65 0.65 0.65 0.90 0.02
+
+# Glazing (clear ~60% visible transmittance)
+void glass glass_60
+0
+0
+3 0.60 0.60 0.60
+
+# Optional: closed light-scattering blind (swap onto window polys when needed)
+void trans blind_closed
+0
+0
+7 0.60 0.60 0.60 0 0.20 0.10 0.60
+
+# (Optional) Neutral luminous material for quick placeholder luminaires.
+# Control brightness by scaling the RGB equally or with xform -m on instances.
+void light ecoos_flux
+0
+0
+3 120 120 120

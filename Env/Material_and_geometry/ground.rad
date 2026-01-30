@@ -1,0 +1,9 @@
+void plastic ground_mat
+0
+0
+5  .2 .2 .2  0 0
+ground_mat ring ground
+0
+0
+8  0 0 -.2  0 0 1  0 20
+

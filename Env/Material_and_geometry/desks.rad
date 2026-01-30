@@ -1,0 +1,23 @@
+# Quadrants: SW (X 0–7.95, Y 0–4.25) • SE (7.95–15.9, 0–4.25)
+#            NW (0–7.95, 4.25–8.5)    • NE (7.95–15.9, 4.25–8.5)
+# Desk size: 1.6 × 0.8 m; origin = front-left floor corner.
+
+# ----- South row (Y = 2.70) -----
+# SW quadrant (3 desks fully inside west half)
+!xform -t 0.50  2.70 0 desk_model.rad
+!xform -t 3.00  2.70 0 desk_model.rad
+!xform -t 5.50  2.70 0 desk_model.rad
+
+# SE quadrant (2 desks fully inside east half)
+!xform -t 9.00  2.70 0 desk_model.rad
+!xform -t 12.00 2.70 0 desk_model.rad
+
+# ----- North row (Y = 5.00) -----
+# NW quadrant (3 desks)
+!xform -t 0.50  5.00 0 desk_model.rad
+!xform -t 3.00  5.00 0 desk_model.rad
+!xform -t 5.50  5.00 0 desk_model.rad
+
+# NE quadrant (2 desks)
+!xform -t 9.00  5.00 0 desk_model.rad
+!xform -t 12.00 5.00 0 desk_model.rad

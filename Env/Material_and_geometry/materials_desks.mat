@@ -1,0 +1,18 @@
+# --- DESK MATERIALS (neutral office defaults) ---
+# Light laminate top (R≈0.55), a touch of roughness for soft highlights
+void plastic desk_top_mat
+0
+0
+5 0.55 0.55 0.55 0 0.02
+
+# Slightly darker modesty panel / edges (optional)
+void plastic desk_edge_mat
+0
+0
+5 0.45 0.45 0.45 0 0.02
+
+# Aluminum/painted steel legs
+void metal desk_leg_mat
+0
+0
+5 0.65 0.65 0.65 0.90 0.02

@@ -1,0 +1,25 @@
+# Data files (large)
+*.npy
+*.wea
+*.npz
+
+# Checkpoints & results
+checkpoints/
+training_results_*/
+results_*/
+*.pt
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Radiance outputs
+*.dat
+res/
+Sky_on_the_fly/
+
+# IDE
+.vscode/
+.idea/

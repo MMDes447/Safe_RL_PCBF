@@ -1,0 +1,13 @@
+# Desk top slab (base at 0.70, top at 0.73)
+!genbox desk_top_mat desk_top 1.6 0.8 0.03 | xform -t 0 0 0.70
+
+# Optionally a thin darker edge band (front & back)
+# (Comment out if you don’t want it)
+!genbox desk_edge_mat edge_front 1.6 0.01 0.03 | xform -t 0 0    0.70
+!genbox desk_edge_mat edge_back  1.6 0.01 0.03 | xform -t 0 0.79 0.70
+
+# Four legs (40x40 mm x 0.70 m), inset 0.06 m from edges
+!genbox desk_leg_mat leg_FL 0.04 0.04 0.70 | xform -t 0.06 0.06 0
+!genbox desk_leg_mat leg_FR 0.04 0.04 0.70 | xform -t 1.50 0.06 0
+!genbox desk_leg_mat leg_RL 0.04 0.04 0.70 | xform -t 0.06 0.70 0
+!genbox desk_leg_mat leg_RR 0.04 0.04 0.70 | xform -t 1.50 0.70 0

@@ -1,0 +1,16 @@
+# Proxies for VMX (band 4 only)
+
+void glow windowglow_b4
+0
+0
+4 1 1 1 0
+
+# Band 4 (highest): Z 2.40 → 2.90
+windowglow_b4 polygon win_band_4_proxy
+0
+0
+12
+0 0.150 2.40
+0 8.350 2.40
+0 8.350 2.90
+0 0.150 2.90

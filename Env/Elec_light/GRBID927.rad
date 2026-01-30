@@ -1,0 +1,40 @@
+# ies2rad -o GRBID927 -dm -t default
+# Dimensions in meters
+#<IESNA:LM-63-2002
+#<[TEST] /
+#<[TESTLAB] ies2eulumdat.appspot.com
+#<[ISSUEDATE] 2025-10-20T11:44:42.126390715
+#<[MANUFAC]
+#<[LUMCAT] 42950954 (IND/DIR - Indirekt/Direkt)
+#<[LUMINAIRE] LE GRB-ID 927-65 L2500 OS-DT8 
+#<[LAMPCAT] LED TW 927-965
+#<[LAMP] LED TW 927-965
+# 57.9 watt luminaire, lamp*ballast factor = 1
+
+void brightdata GRBID927_dist
+5 flatcorr GRBID927.dat source.cal src_phi src_theta 
+0
+1 3.775263669347763
+
+GRBID927_dist light GRBID927_light
+0
+0
+3 1 1 1
+
+GRBID927_light polygon GRBID927.d
+0
+0
+12
+	-0.0175	-1.249	-0.00025
+	-0.0175	1.249	-0.00025
+	0.0175	1.249	-0.00025
+	0.0175	-1.249	-0.00025
+
+GRBID927_light polygon GRBID927.u
+0
+0
+12
+	-0.0175	-1.249	0.00025
+	0.0175	-1.249	0.00025
+	0.0175	1.249	0.00025
+	-0.0175	1.249	0.00025

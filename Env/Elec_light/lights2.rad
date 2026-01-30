@@ -1,0 +1,13 @@
+# lights.rad — 4 sections, 1 batch per section (32 fixtures total)
+
+# SW quadrant
+!xform -t 0     0     0 ecoo_batch_quad1.rad
+
+# SE quadrant
+!xform -t 7.95  0     0 ecoo_batch_quad2.rad
+
+# NW quadrant
+!xform -t 0     4.25  0 ecoo_batch_quad3.rad
+
+# NE quadrant
+!xform -t 7.95  4.25  0 ecoo_batch_quad4.rad

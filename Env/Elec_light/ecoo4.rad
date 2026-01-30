@@ -1,0 +1,76 @@
+# ies2rad -o ecoo -dm -t default
+# Dimensions in meters
+#<IESNA:LM-63-2002
+#<[TEST]      D48889AA
+#<[TESTLAB]
+#<[ISSUEDATE] 15.11.2024
+#<[MANUFAC]   ZUMTOBEL
+#<[LUMCAT]    42190673 (WW - 2700 K - warm white)
+#<[LUMINAIRE] ECOOS2 5500-ZTW MSP L15 MPO LDE
+#<[LAMPCAT]
+#<[LAMP]      LED-Z42190673 WW  46C3W
+# 46 watt luminaire, lamp*ballast factor = 1
+
+void brightdata ecoo_dist
+5 boxcorr ecoo.dat source.cal src_phi4 src_theta 
+0
+4 0.650889 0.12 1.5 0.06
+
+ecoo_dist light ecoo_light
+0
+0
+3 1 1 1
+
+ecoo_light polygon ecoo.d
+0
+0
+12
+	-0.06	-0.75	-0.03
+	-0.06	0.75	-0.03
+	0.06	0.75	-0.03
+	0.06	-0.75	-0.03
+
+ecoo_light polygon ecoo.u
+0
+0
+12
+	-0.06	-0.75	0.03
+	0.06	-0.75	0.03
+	0.06	0.75	0.03
+	-0.06	0.75	0.03
+
+ecoo_light polygon ecoo.1
+0
+0
+12
+	-0.06	-0.75	-0.03
+	0.06	-0.75	-0.03
+	0.06	-0.75	0.03
+	-0.06	-0.75	0.03
+
+ecoo_light polygon ecoo.2
+0
+0
+12
+	0.06	-0.75	-0.03
+	0.06	0.75	-0.03
+	0.06	0.75	0.03
+	0.06	-0.75	0.03
+
+ecoo_light polygon ecoo.3
+0
+0
+12
+	0.06	0.75	-0.03
+	-0.06	0.75	-0.03
+	-0.06	0.75	0.03
+	0.06	0.75	0.03
+
+ecoo_light polygon ecoo.4
+0
+0
+12
+	-0.06	0.75	-0.03
+	-0.06	-0.75	-0.03
+	-0.06	-0.75	0.03
+	-0.06	0.75	0.03

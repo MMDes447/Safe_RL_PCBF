@@ -1,0 +1,40 @@
+# ies2rad -o GRBID940 -dm -t default
+# Dimensions in meters
+#<IESNA:LM-63-2002
+#<[TEST] /
+#<[TESTLAB] ies2eulumdat.appspot.com
+#<[ISSUEDATE] 2025-10-20T10:55:26.236069389
+#<[MANUFAC]
+#<[LUMCAT] 42950954 (IND/DIR - Indirekt/Direkt)
+#<[LUMINAIRE] LE GRB-ID 940-917K L2500 OS-DT8 
+#<[LAMPCAT] LED ZBTW 4k-17kK
+#<[LAMP] LED ZBTW 4k-17kK
+# 82 watt luminaire, lamp*ballast factor = 1
+
+void brightdata GRBID940_dist
+5 flatcorr GRBID940.dat source.cal src_phi src_theta 
+0
+1 7.329624475216865
+
+GRBID940_dist light GRBID940_light
+0
+0
+3 1 1 1
+
+GRBID940_light polygon GRBID940.d
+0
+0
+12
+	-0.0175	-1.249	-0.00025
+	-0.0175	1.249	-0.00025
+	0.0175	1.249	-0.00025
+	0.0175	-1.249	-0.00025
+
+GRBID940_light polygon GRBID940.u
+0
+0
+12
+	-0.0175	-1.249	0.00025
+	0.0175	-1.249	0.00025
+	0.0175	1.249	0.00025
+	-0.0175	1.249	0.00025

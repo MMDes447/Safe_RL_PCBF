@@ -1,0 +1,33 @@
+# 4 strips per quadrant, centered between ECOOS, Z=5.35
+# Scale to 3.525 m length from 7.0 m file: s = 0.5036
+# Left sub-seg order: top 940 / bottom 927
+# Right sub-seg order: top 927 / bottom 940
+# Vertical offset within pair: ±0.10 m
+
+# ---------------- SOUTH HALF (quadrants with Y = 0..4.25), mid Y = 2.00 ----------------
+# SW quadrant (X offset = 0.00)
+# left sub-segment @ X=0.30
+!xform -s 0.5036 -rz -90 -t 0.30  2.10 5.35 GRBID940.rad
+!xform -s 0.5036 -rz -90 -t 0.30  1.90 5.35 GRBID927.rad
+# right sub-segment @ X=4.125
+!xform -s 0.5036 -rz -90 -t 4.125 2.10 5.35 GRBID927.rad
+!xform -s 0.5036 -rz -90 -t 4.125 1.90 5.35 GRBID940.rad
+
+# SE quadrant (X offset = +7.95)
+!xform -s 0.5036 -rz -90 -t 8.25  2.10 5.35 GRBID940.rad   # 7.95 + 0.30
+!xform -s 0.5036 -rz -90 -t 8.25  1.90 5.35 GRBID927.rad
+!xform -s 0.5036 -rz -90 -t 12.075 2.10 5.35 GRBID927.rad # 7.95 + 4.125
+!xform -s 0.5036 -rz -90 -t 12.075 1.90 5.35 GRBID940.rad
+
+# ---------------- NORTH HALF (quadrants with Y = 4.25..8.5), mid Y = 6.25 ----------------
+# NW quadrant (Y offset = +4.25)
+!xform -s 0.5036 -rz -90 -t 0.30  6.35 5.35 GRBID940.rad
+!xform -s 0.5036 -rz -90 -t 0.30  6.15 5.35 GRBID927.rad
+!xform -s 0.5036 -rz -90 -t 4.125 6.35 5.35 GRBID927.rad
+!xform -s 0.5036 -rz -90 -t 4.125 6.15 5.35 GRBID940.rad
+
+# NE quadrant (X offset = +7.95, Y offset = +4.25)
+!xform -s 0.5036 -rz -90 -t 8.25   6.35 5.35 GRBID940.rad
+!xform -s 0.5036 -rz -90 -t 8.25   6.15 5.35 GRBID927.rad
+!xform -s 0.5036 -rz -90 -t 12.075 6.35 5.35 GRBID927.rad
+!xform -s 0.5036 -rz -90 -t 12.075 6.15 5.35 GRBID940.rad

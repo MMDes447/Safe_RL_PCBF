@@ -1,3 +1,6 @@
+## Repository Structure
+```
+safe-rl-building-control/
 ├── Env/                          # Radiance simulation environment
 │   ├── D_mats/                   # Daylight matrices (D1-4.dmx)
 │   ├── V_mats/                   # View matrices - workplane (V1-4.vmx)
@@ -25,3 +28,4 @@
 │   └── RB_SENSOR.py              # Rule-based baseline (per-sensor)
 │
 └── README.md
+```

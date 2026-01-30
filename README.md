@@ -1,3 +1,30 @@
+# Safe RL for Joint Lighting and Blind Control
+
+This repository contains the code for the paper:
+
+**"Safe Reinforcement Learning for Joint Lighting and Blind Control Using Predictive Control Barrier Functions"**
+
+---
+
+This repo contains:
+1. All the material, object, and IES files to create the described room in Radiance
+2. All the controllers mentioned in the paper
+
+There are two step functions:
+- `fast_step.py` — Uses matrix multiplication (faster)
+- `RAD_STEP.py` — Uses Radiance directly (slower)
+
+---
+
+## Requirements
+
+- Python 3.8+
+- NumPy, PyTorch, Matplotlib
+- Gurobi
+- Radiance (for full simulation mode)
+
+Tested on Ubuntu.
+
 ## Repository Structure
 ```
 safe-rl-building-control/
@@ -5,7 +32,7 @@ safe-rl-building-control/
 │   ├── D_mats/                   # Daylight matrices (D1-4.dmx)
 │   ├── V_mats/                   # View matrices - workplane (V1-4.vmx)
 │   ├── V_ver/                    # View matrices - vertical/glare (V1-4.vmx)
-│   ├── Elec_light/               # Electric light definitions (.rad)
+│   ├── Elec_light/               # Electric light definitions (.rad, .ies)
 │   ├── Material_and_geometry/    # Scene geometry, materials, sensor points
 │   ├── bl_state/                 # Blind state BSDF files (.xml)
 │   ├── glazings/                 # Window definitions (.rad)

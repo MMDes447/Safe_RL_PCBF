@@ -12,7 +12,8 @@ This repo contains:
 
 There are two step functions:
 - `fast_step.py` — Uses matrix multiplication (faster)
-- `RAD_STEP.py` — Uses Radiance directly (slower)
+- `RAD_STEP.py` — Uses Radiance directly (slower), For this simulation, you need to generate a luminaire .rad file from a given IES file and place it in ENV/Elec_light/.
+- Each lighting batch requires a corresponding IES file. To control the brightness of a given batch, edit ENV/Elec_light/ecoo_batch_quad.rad for the corresponding quadrant.
 
 ---
 

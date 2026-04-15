@@ -34,7 +34,7 @@ safe-rl-building-control/
 │   ├── D_mats/                   # Daylight matrices (D1-4.dmx)
 │   ├── V_mats/                   # View matrices - workplane (V1-4.vmx)
 │   ├── V_ver/                    # View matrices - vertical/glare (V1-4.vmx)
-│   ├── Elec_light/               # Electric light definitions (.rad, .ies)
+│   ├── Elec_light/               # Electric light definitions 
 │   ├── Material_and_geometry/    # Scene geometry, materials, sensor points
 │   ├── bl_state/                 # Blind state BSDF files (.xml)
 │   ├── glazings/                 # Window definitions (.rad)
